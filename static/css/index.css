@@ -1,0 +1,1033 @@
+.navTop {
+    width: 100%;
+    height: 29px;
+    line-height: 29px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.showOut {
+    width: 1200px;
+    margin: 0  auto;
+    position: relative;
+    z-index: 999;
+}
+
+.word-left {
+    float: left;
+}
+
+.word-right {
+    float: right;
+}
+
+.word-right a:hover{
+    color: #ff6600;
+    border-bottom: 1px solid #ff6600;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    transition: color 300ms ease 0s, background-color 300ms ease 0s;
+}
+
+.word-right i {
+    padding: 0 6px;
+    color: #cdcdcd;
+}
+
+em, i {
+    font-style: normal;
+}
+img {
+    border: 0;
+}
+
+.head {
+    width: 100%;
+    height: 90px;
+    background: #fff;
+}
+
+.head .from-logo {
+    width: 425px;
+    margin: 29px 0 0;
+}
+
+.head .from-logo img {
+    float:left;
+    width: 195px;
+    height: 30px;
+}
+
+img {
+    border: 0;
+}
+
+
+.head .from-logo em {
+    float: left;
+    width: 198px;
+    height: 28px;
+    margin: 4px 0 0 28px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat 0 0;
+}
+
+#fromForm {
+    float: right;
+    width: 550px;
+    height: 41px;
+    margin: 23px 0 0 26px;
+    border: 2px solid #ff6600;
+}
+
+#fromForm .s_into {
+    float: left;
+    width: 464px;
+    height: 38px;
+    line-height: 41px;
+    text-indent: 1em;
+    border: none;
+}
+input {
+    outline: none;
+}
+
+.souSuo {
+    float: left;
+    width: 84px;
+    height: 41px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -193px -51px #ff6600;
+    border: none;
+    text-indent: -999em;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #333;
+}
+
+.nav .showOut {
+    z-index: 1000;
+}
+
+
+.nav .showOut .click {
+    background: #ff6600;
+}
+
+.nav .showOut li:hover{
+    background: #ff6600;
+}
+
+li {
+    list-style: none;
+}
+
+.nav .showOut li {
+    float: left;
+    width:130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.nav .showOut li a {
+    display: block;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.more {
+    padding-top: 80px;
+}
+.groom {
+    padding-left: 14px;
+    padding-right: 14px;
+    background: #fff;
+}
+
+.edge {
+    padding-top: 16px;
+}
+
+.page {
+    background: #f2f2f2;
+}
+
+
+.by-inside span em {
+    display: block;
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin: 10px 6px 0 0;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat 0 -106px;
+}
+
+.by-inside span i {
+    color: #ff6600;
+}
+
+.by-inside a {
+    display: block;
+    float: right;
+    line-height: 51px;
+    padding: 0 25px 0 0;
+    font-size: 14px;
+    color: #666;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -173px -206px;
+}
+
+.groom ul {
+    width: 1188px;
+    overflow: hidden;
+}
+
+.groom ul li {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 150px;
+    margin: 14px 17px 0 0;
+    overflow: hidden;
+}
+
+.yx-name:hover {
+     color: #ff6600;
+     text-decoration:underline;
+}
+
+.yx-chart {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 280px;
+    height: 150px;
+}
+
+.yx-js-name {
+     padding: 10px 0 4px;
+    color: #f6ff00;
+}
+
+.yx-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 280px;
+    height: 25px;
+    line-height: 25px;
+    background: url(http://www.5577.com/skin/library/images/tmbg.png) repeat scroll 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.yx-detail {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 280px;
+    height: 96px;
+    background: #1f272b;
+}
+
+.yx-detail .yx-xtp img {
+    float: left;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 10px 13px 0;
+}
+
+.yx-detail .yx-DxRq {
+    color: #c4c4c4;
+}
+
+.yx-detail .yx-DxRq em {
+    border-left: 1px solid #b7d0e4;
+    display: inline-block;
+    margin: 0 0 0 11px;
+    padding: 0 0 10px 12px;
+}
+
+.yx-detail .yx-score {
+    float: left;
+    width: 70px;
+    height: 15px;
+    margin: 6px 5px 0 0;
+    background: url(http://www.5577.com/skin/library/images/star4.png) no-repeat scroll 0 0;
+}
+
+.yx-detail .yx-TwoScore {
+    float: left;
+    width: 70px;
+    height: 15px;
+    margin: 6px 5px 0 0;
+    background: url(http://www.5577.com/skin/library/images/star5.png) no-repeat scroll 0 0
+}
+
+.yx-type {
+    height: 680px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.yx-type .show-mode {
+    float: left;
+    width: 875px;
+    margin: 0 0 0 15px;
+}
+
+.yx-case-type {
+     width: 951px;
+    overflow: hidden;
+}
+
+.yx-small-case-type {
+    float: left;
+    width: 276px;
+    height: 309px;
+    margin: 0 22px 0 0;
+    border-right: 1px solid #eee;
+    background: url(http://www.5577.com/skin/library/images/line.png) no-repeat 0 0;
+}
+
+.small-type-top span {
+    float: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.small-type-top a {
+    float: right;
+    padding: 0 24px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.yx-small-case-type ul li {
+    height: 74px;
+    margin: 0 0 13px;
+}
+
+.small-type-top{
+    height: 45px;
+    line-height: 45px;
+    margin: 0;
+}
+
+.yx-case-type li .yx-rj {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 0 8px 0 0;
+}
+
+.yx-case-type li .rj-name {
+    height: 20px;
+    line-height: 17px;
+    padding: 0 35px 0 0;
+    overflow: hidden;
+}
+
+.yx-case-type li .rj-name a {
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.yx-case-type li .new-bb {
+    color: #999;
+}
+
+.yx-new-case {
+    height: 672px;
+    display: inline;
+    overflow: hidden;
+}
+
+.yx-type .yx-new-case {
+    float: right;
+    width: 281px;
+    margin: 0 14px 0 0;
+}
+
+.yx-new-case .by-inside span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -50px -105px;
+}
+
+.yx-xt {
+    width: auto;
+    height: auto;
+    float: right;
+    margin: 12px 4px 0 0;
+    display: inline;
+    overflow: hidden;
+}
+
+.yx-xt .az-hover {
+    background: #f60;
+    color: #fff;
+}
+
+.yx-xt li{
+    width: auto;
+    height: 22px;
+    line-height: 22px;
+    background: #f5f5f5;
+    color: #333;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    margin: 0 0 0 7px;
+    padding: 0 7px;
+    display: inline;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.yx-newFb {
+    display: block;
+}
+
+.yx-newFb li {
+    clear: both;
+    margin: 10px 0 0;
+    padding: 0 0 11px;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+
+.yx-newFb li .rj-newFb {
+    float: left;
+    width: 217px;
+}
+
+.yx-newFb .fb-hot .rj-newFb .fb-name i {
+    background-color: #ff4b4b;
+}
+
+.yx-newFb li .rj-newFb .fb-name i {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #b4b4b4;
+    color: #fff;
+}
+
+.yx-newFb li .rj-newFb .fb-name a {
+    display: block;
+    height: 23px;
+    padding: 0 0 0 9px;
+    font-size: 15px;
+    color: #4a4a4a;
+    overflow: hidden;
+}
+
+.yx-newFb li .rj-newFb .lx-rl {
+    padding: 4px 0 0 36px;
+    color: #999999;
+}
+
+.yx-newFb li .rj-newFb .lx-rl i {
+    padding: 0 6px;
+}
+
+.yx-newFb li .rj-newFb .xs {
+    display: none;
+    height: 64px;
+    margin: 10px 0 0;
+}
+
+.yx-newFb li .rj-newFb .xs a img {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 0 0;
+}
+
+font {
+    color: rgb(255, 0, 0);
+}
+
+.yx-newFb li .rj-data {
+    float: right;
+    width: 60px;
+    height: 50px;
+    line-height: 69px;
+    text-align: center;
+    font-size: 14px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat 0 -147px;
+}
+
+.join {
+    display: none;
+}
+
+#come {
+    display: block;
+}
+
+.yx-sjwy {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.yx-sjwy .yx-zxtj {
+    float: left;
+    width: 280px;
+}
+
+.yx-sjwy .other{
+    overflow: hidden;
+}
+
+
+.yx-zxtj-case {
+    position: relative;
+}
+
+.yx-zxtj-case .xb-case {
+    position: absolute;
+    top: 9px;
+    left: -9px;
+}
+
+.yx-zxtj-case .xb-case .chart-xb-tj {
+    float: left;
+    width: 113px;
+    height: 36px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -128px -147px;
+}
+
+.yx-zxtj-case li {
+    border: 1px solid #eeeeee;
+    background-color: #f8f8f8;
+}
+
+.yx-zxtj-case .xbtj-top {
+    width: 258px;
+    height: 150px;
+    padding: 47px 0 0;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.yx-zxtj-case .xbtj-top a {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 11px 0 0;
+}
+
+.yx-zxtj-case .xbtj-top a img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.yx-zxtj-case .xbtj-top .info a {
+    display: block;
+    height: 29px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.yx-zxtj-case .xbtj-top .info img {
+    display: block;
+    margin: 4px 0 2px;
+}
+
+.yx-zxtj-case .xbtj-top .wz {
+    clear: both;
+    height: 35px;
+    padding: 6px 0 0;
+    overflow: hidden;
+    color: #999;
+}
+
+.yx-zxtj-case .rj-tj-case {
+    padding: 10px 0 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.yx-zxtj-case .rj-tj-case li {
+    float: left;
+    width: 92px;
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}
+
+.yx-zxtj-case .rj-tj-case li img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 4px;
+}
+
+.rj-rmsy {
+    float: left;
+    width: 547px;
+    height: 346px;
+    margin: 0 0 0 35px;
+}
+
+.seat span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -76px -105px;
+}
+
+.fl span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -24px -105px;
+}
+
+.rj-rmsy .title span {
+    padding: 0 0 0 26px;
+    font-size: 14px;
+}
+
+.rj-rmsy .title span .hover{
+    color: #ff6600;
+}
+
+.rj-rmsy .title span i{
+    padding: 0 9px;
+    font-size: 14px;
+}
+
+.clearfix {
+    display: block;
+}
+
+.game-software {
+    float: left;
+    height: 141px;
+    width: 90px;
+    margin: 0 0 25px;
+}
+
+.xz-recall {
+    display: block;
+    height: 124px;
+    padding: 9px 8px;
+    border: 1px solid #fff;
+    font-size: 0;
+    text-align: center;
+}
+
+.xz-recall img {
+    border-radius: 4px;
+    display: block;
+    height: 72px;
+    margin-bottom: 14px;
+    width: 72px;
+}
+
+.game-title {
+   display: block;
+    font-size: 14px;
+    line-height: 18px;
+    width: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.game-mold {
+    display: block;
+    width: 72px;
+    line-height: 18px;
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.game-enter {
+    display: none;
+    width: 72px;
+    height: 29px;
+    line-height: 29px;
+    background-color: #ff7700;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.yx-sjwy .zxsy-sort {
+    height: 337px;
+    overflow: hidden;
+    float: right;
+    width: 283px;
+    margin: 0 13px 0 0;
+}
+
+.type-right {
+    float: right;
+    font-size: 14px;
+    color: #999;
+}
+
+.come {
+    display: block;
+}
+
+.zxyy-count .number img, .fb-hot .xs a img {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 0 0;
+}
+
+.hot-set {
+    width:1165px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hot-collection {
+    clear: both;
+    width: 1165px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hot-collection .gd {
+    float: right;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.hot-collection .hot-left {
+    float: left;
+}
+
+.hot-set .hot-chart {
+    width: 1200px;
+    overflow: hidden;
+}
+
+.hot-set .hot-chart li {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 150px;
+    margin: 0 16px 0 0;
+}
+
+.hot-chart li a img {
+    width: 280px;
+    height: 150px;
+}
+
+.move-hover, .hot-chart li a .move-hover {
+    position: absolute;
+    bottom: 0;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: url(http://www.5577.com/skin/library/images/tmbg.png) repeat 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.cover-down {
+    height: 82px;
+    line-height: 21px;
+    padding: 0 11px;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: left;
+}
+
+.yx-yyrj span {
+    display: block;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+.yx-yyrj .title_bar span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -103px -105px;
+
+}
+
+.yx-picture {
+    float: left;
+    width: 280px;
+    margin: 18px 0 0 18px;
+}
+
+.yx-picture ul li {
+    position: relative;
+    width: 280px;
+    height: 150px;
+    margin: 0 0 25px;
+    overflow: hidden;
+}
+
+.yx-picture ul li img {
+    display: block;
+    width: 280px;
+    height: 150px;
+}
+
+.yx-yyrj dl {
+    overflow: hidden;
+}
+
+.yx-yyrj, .yx-rdzt{
+    background: #fff;
+}
+
+.yx-new-use, .yx-yyrj .yx-zxyy {
+    height: 337px;
+    overflow: hidden;
+}
+
+.yx-new-use, .yx-yyrj .yx-zxyy {
+    float: right;
+    width: 283px;
+    margin: 0 13px 0 0;
+}
+
+.tj-xz-yx {
+    overflow: hidden;
+    height: 306px;
+}
+
+
+.img-info {
+    display: block;
+    overflow: hidden;
+}
+
+.yx-new-use .zxyy-count .number i {
+    background: #ff4b4b;
+}
+
+.zxyy-count {
+    overflow: hidden;
+}
+
+.zxyy-count li .img-info .name {
+    height: 17px;
+    padding: 0 0 10px;
+    overflow: hidden;
+}
+
+
+.img-info .sign .name{
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.yx-rdzt .title_bar span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -128px -105px;
+}
+
+.block-mark {
+    padding: 18px 18px 0 18px;
+    overflow: hidden;
+}
+
+.yx-rdzt .rjzt-left {
+    width: 423px;
+}
+
+.rjzt-img-up {
+    width: 420px;
+    height: 225px;
+    margin: 0 0 12px;
+    overflow: hidden;
+}
+
+.rjzt-left .rjzt-img-up a {
+    position: relative;
+    width: 420px;
+    height: 225px;
+}
+
+.rjzt-left .rjzt-img-up a span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 420px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: url(http://www.5577.com/skin/library/images/tmbg.png) repeat 0 0;
+}
+
+.yx-zxrk {
+    width: 423px;
+}
+
+.yx-zxrk p {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #eee;
+}
+
+.yx-zxrk p i {
+    background: #eee;
+    display: block;
+    width: 30%;
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+.zxrk-rj {
+    overflow: hidden;
+}
+
+.block-mark .yx-zxrk .zxrk-rj li {
+    float: left;
+    width: 71px;
+    height: 89px;
+    margin: 13px 16px 0 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.zxrk-rj li img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 0 3px;
+}
+
+.yx-rdzt .hot_article {
+    float: left;
+    width: 426px;
+    margin: 0 0 0 18px
+}
+
+.hot_article .gd {
+    float: right;
+    font-size: 14px;
+}
+
+.hot_article ul li {
+    height: 90px;
+    margin: 5px 0 22px;
+    overflow: hidden;
+}
+
+.hot_article ul li img {
+    display: block;
+    float: left;
+    width: 155px;
+    height: 90px;
+    margin: 0 10px 0 0;
+}
+
+.hot_article ul li .sign .name {
+    padding: 0 0 7px;
+    font-size: 15px;
+    color: #666;
+}
+
+.hot_article ul li .sign p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.block-mark .weekly_pick {
+     float: right;
+     width: 283px;
+}
+
+.weekly_pick ul .head{
+    height: 112px;
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+
+.weekly_pick ul li {
+    height: 31px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.weekly_pick ul .head .name{
+    width: 100%;
+    height: 19px;
+    line-height: 19px;
+    margin: 0 0 7px;
+    padding: 0 0 4px;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.weekly_pick ul .head img {
+    display: block;
+    float: left;
+    width: 139px;
+    height: 80px;
+    margin: 0 10px 0 0;
+}
+
+.weekly_pick ul .head .content {
+    line-height: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.weekly_pick li {
+    height: 31px;
+    line-height: 30px;
+    overflow:hidden;
+}
+
+.weekly_pick ul .news i {
+    padding: 3px 7px;
+    margin-right: 5px;
+    background: #ff4444;
+    color: #fff;
+}
+
+.weekly_pick ul .sj i {
+    padding: 3px 7px;
+    margin-right: 5px;
+    background: #5fc700;
+    color: #fff;
+}
+
+.weekly_pick ul .yx i {
+    padding: 3px 7px;
+    margin-right: 5px;
+    background: #19b5fe;
+    color: #fff;
+}
+
+
+

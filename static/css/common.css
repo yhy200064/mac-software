@@ -1,0 +1,291 @@
+/*公用样式*/
+body {
+    font:12px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+body {
+    color: #666;
+    background: #fff;
+    width: 100%;
+}
+
+body, div {
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+p, form, ul, li, dl, dt, dd{
+    margin:0;
+    padding:0;
+}
+form {
+    display: block;
+}
+.yx-new-use .title, .rj-rmsy .title, .yx-sjwy .title, .hot_article .title, .weekly_pick .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.hot_article .title, .weekly_pick.title, .weekly_pick .title{
+    height: 35px;
+    line-height: 24px;
+    margin: 0 0 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.by-inside {
+    height: 47px;
+    line-height: 41px;
+    border-bottom: 2px solid #ff6600;
+    overflow: hidden;
+}
+
+.by-inside span {
+    display: block;
+    float: left;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+.title_bar {
+    width: 1165px;
+    margin: 0 auto;
+}
+
+.yx-new-use .zxyy-count li i, .list-type ul li i{
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    background: #b4b4b4;
+    color: #fff;
+}
+
+.weekly_pick ul a{
+    font-size: 15px;
+    color: #555;
+}
+
+.ranking .imgPack .name a, .stand-alone ul .ranking a, .web-game ul .ranking a{
+    font-size: 15px;
+    color: #333;
+}
+/*游戏美女*/
+.game-beauty {
+    height: 502px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.game-beauty .by-inside span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -156px -105px;
+}
+
+.game-beauty ul {
+    position: relative;
+    width: 1216px;
+    height: 445px;
+    margin: 17px 0 0;
+    overflow: hidden;
+}
+
+.game-beauty ul li .firstChart {
+    left: 0;
+    top: 0;
+}
+
+.game-beauty ul li {
+    position: absolute;
+    float: left;
+    margin: 0 16px 0 0;
+}
+
+.game-beauty ul li a {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: auto;
+}
+
+.game-beauty ul li .girl-bigChart img {
+    width: 280px;
+    height: 435px;
+}
+
+.game-beauty ul li a i {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0;
+    width: 280px;
+    height: 438px;
+    background: url(http://www.5577.com/skin/library/images/tmbg.png) repeat 0 0;
+}
+
+.game-beauty ul .girl-smallChart {
+    height: 209px;
+    overflow: hidden;
+}
+
+.game-beauty ul .secondChart {
+    left: 297px;
+    top: 0;
+}
+
+.game-beauty ul .thirdChart {
+    left: 297px;
+    top: 226px;
+}
+
+
+.game-beauty ul .fourthChart {
+    left: 593px;
+    top: 0
+}
+
+.game-beauty ul .fifthChart {
+    left: 890px;
+    top: 0;
+}
+
+.game-beauty ul .sixthChart {
+    left: 890px;
+    top: 226px;
+}
+
+/*排行榜*/
+.ranking-list {
+    background: #fff;
+    overflow: hidden;
+}
+
+.ranking-list .title_bar span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -183px -105px;
+}
+
+.ranking-list .list-type {
+    margin: 15px 18px 0 18px;
+    overflow: hidden;
+}
+
+.stand-alone {
+    float: left;
+    width: 270px;
+}
+
+.stand-alone .title {
+    background: #ff4444;
+}
+
+.ranking-list .list-type .stand-alone .title, .web-game .title {
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ranking-list .list-type .stand-alone p i {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 36px;
+    margin: 9px 8px 0 60px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat 0 -214px;
+}
+
+.stand-alone ul li, .web-game ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.stand-alone ul li .num {
+    background: #ff4b4b;
+}
+
+.stand-alone ul .ranking .imgPack img, .web-game ul .ranking .imgPack img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 0 0;
+}
+
+.stand-alone ul .ranking .imgPack .name, .web-game ul .ranking .imgPack .name{
+    height: 15px;
+    padding: 0 0 10px;
+    overflow: hidden;
+}
+
+.ranking .imgPack .info {
+    color: #aaa;
+}
+
+.stand-alone ul .ranking .fontPack, .web-game ul .ranking .fontPack {
+    float: left;
+    width: 218px;
+    height: 25px;
+    line-height: 28px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.ranking .Img_hover {
+    display: none;
+}
+.ranking .font_hover {
+    display: block;
+}
+.imgPack {
+    display: block;
+}
+.fontPack {
+    display: none;
+}
+
+.stand-alone ul .ranking .hover,.web-game ul .ranking .hover{
+    display: block;
+}
+
+.stand-alone ul .ranking .none, .web-game ul .ranking .none {
+    display: none;
+}
+
+.web-game {
+    float:left;
+    width: 270px;
+    margin-left: 28px;
+}
+
+.web-game .title {
+    background: #5fc700;
+}
+
+.web-game .title i {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 36px;
+    margin: 9px 8px 0 60px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -34px -214px;
+}
+
+.web-game ul li .num {
+    background: #5fc700;
+}
