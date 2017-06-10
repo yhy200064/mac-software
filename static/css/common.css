@@ -2,23 +2,19 @@
 body {
     font:12px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial
 }
-
 body {
     background-color: #f8f8f8;
 }
-
 body {
     color: #666;
     background: #fff;
     width: 100%;
 }
-
 body, div {
     display:block;
     margin:0;
     padding:0;
 }
-
 p, form, ul, li, dl, dt, dd{
     margin:0;
     padding:0;
@@ -32,21 +28,18 @@ form {
     font-size: 18px;
     color: #333;
 }
-
 .hot_article .title, .weekly_pick.title, .weekly_pick .title{
     height: 35px;
     line-height: 24px;
     margin: 0 0 16px;
     border-bottom: 1px solid #eee;
 }
-
 .by-inside {
     height: 47px;
     line-height: 41px;
     border-bottom: 2px solid #ff6600;
     overflow: hidden;
 }
-
 .by-inside span {
     display: block;
     float: left;
@@ -55,13 +48,11 @@ form {
     font-weight: bold;
     color: #666;
 }
-
 .title_bar {
     width: 1165px;
     margin: 0 auto;
 }
-
-.yx-new-use .zxyy-count li i, .list-type ul li i{
+.yx-new-use .zxyy-count li i, .list-type ul li i, .zxsy-sort ul li i{
     display: block;
     float: left;
     width: 25px;
@@ -72,16 +63,142 @@ form {
     background: #b4b4b4;
     color: #fff;
 }
-
 .weekly_pick ul a{
     font-size: 15px;
     color: #555;
 }
-
-.ranking .imgPack .name a, .stand-alone ul .ranking a, .web-game ul .ranking a{
+.ranking .imgPack .name a, .stand-alone ul .ranking a, .web-game ul .ranking a, .application ul .ranking a, .Crack ul .ranking a{
     font-size: 15px;
     color: #333;
 }
+
+.yx-newFb li .rj-newFb .hover {
+    display:block;
+}
+
+.yx-newFb li .rj-newFb .come {
+    display:block;
+}
+
+.yx-newFb li .rj-newFb .none{
+    display: none
+}
+
+
+.zxsy-sort ul .hover- {
+    padding: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+}
+
+.zxsy-sort ul li .num {
+    background: #ff4b4b;
+}
+
+.zxsy-sort ul li.hover .imgbox{
+    display: block;
+}
+
+.zxsy-sort ul li .imgbox {
+    display: none;
+}
+
+.zxsy-sort li .imgbox img {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin: 0 10px 0 0;
+}
+
+.zxsy-sort li .imgbox .name{
+    height: 17px;
+    padding: 0 0 10px;
+    overflow: hidden;
+}
+
+.zxsy-sort li .imgbox .name a {
+    color: #333;
+    font-size: 15px;
+}
+
+.zxsy-sort li .imgbox .info {
+    color: #aaa;
+}
+
+.zxsy-sort li.hover .txtbox {
+    display: none;
+}
+
+.zxsy-sort li .txtbox {
+    float: left;
+    width: 243px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.zxsy-sort li .txtbox a {
+    display: block;
+    float: left;
+    width: 168px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.zxsy-sort li .txtbox em {
+    float: right;
+    font-size: 14px;
+    color: #999999;
+}
+
+.zxsy-sort li .imgbox .name a:hover {
+    color: #ff6600;
+}
+
+.rj-tj-case li a:hover {
+    color: #ff6600;
+}
+
+.zxrk-rj li a:hover {
+    color: #ff6600;
+}
+
+/*.hot_article ul li a .sign .name:hover{*/
+    /*color: #ff6600;*/
+
+/*}*/
+
+.hot_article ul li a:hover {
+    text-decoration: none;
+}
+
+.hot_article ul li:hover {
+    background: #f8f8f8;
+
+}
+
+.weekly_pick ul li a:hover {
+    color: #ff6600;
+}
+
+.ranking .imgPack .name a:hover {
+    color: #ff6600;
+}
+
+.official-website li a:hover {
+    color: #ff6600;
+}
+
+.xz-recall:hover {
+    background: #f8f8f8;
+    border: 1px solid #ededed;
+    text-decoration: none;
+}
+
+
 /*游戏美女*/
 .game-beauty {
     height: 502px;
@@ -126,6 +243,7 @@ form {
     height: 435px;
 }
 
+
 .game-beauty ul li a i {
     position: absolute;
     z-index: 10;
@@ -146,6 +264,10 @@ form {
 .game-beauty ul .secondChart {
     left: 297px;
     top: 0;
+}
+
+.game-beauty ul .secondChart img {
+    height:209px
 }
 
 .game-beauty ul .thirdChart {
@@ -193,7 +315,7 @@ form {
     background: #ff4444;
 }
 
-.ranking-list .list-type .stand-alone .title, .web-game .title {
+.ranking-list .list-type .stand-alone .title, .web-game .title, .application .title, .Crack .title {
     height: 45px;
     line-height: 45px;
     font-size: 18px;
@@ -210,7 +332,7 @@ form {
     background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat 0 -214px;
 }
 
-.stand-alone ul li, .web-game ul li{
+.stand-alone ul li, .web-game ul li, .application ul li,.Crack ul li{
     padding: 8px 0;
     border-bottom: 1px solid #eee;
     overflow: hidden;
@@ -220,14 +342,14 @@ form {
     background: #ff4b4b;
 }
 
-.stand-alone ul .ranking .imgPack img, .web-game ul .ranking .imgPack img {
+.stand-alone ul .ranking .imgPack img, .web-game ul .ranking .imgPack img, .application ul .ranking .imgPack img, .Crack ul .ranking .imgPack img{
     float: left;
     width: 70px;
     height: 70px;
     margin: 0 10px 0 0;
 }
 
-.stand-alone ul .ranking .imgPack .name, .web-game ul .ranking .imgPack .name{
+.stand-alone ul .ranking .imgPack .name, .web-game ul .ranking .imgPack .name, .application .ranking .imgPack .name, .Crack .ranking .imgPack .name{
     height: 15px;
     padding: 0 0 10px;
     overflow: hidden;
@@ -237,7 +359,7 @@ form {
     color: #aaa;
 }
 
-.stand-alone ul .ranking .fontPack, .web-game ul .ranking .fontPack {
+.stand-alone ul .ranking .fontPack, .web-game ul .ranking .fontPack, .application ul .ranking .fontPack, .Crack ul .ranking .fontPack  {
     float: left;
     width: 218px;
     height: 25px;
@@ -252,22 +374,26 @@ form {
 .ranking .font_hover {
     display: block;
 }
-.imgPack {
-    display: block;
-}
-.fontPack {
+.fontsign{
     display: none;
 }
 
-.stand-alone ul .ranking .hover,.web-game ul .ranking .hover{
+.top-sign .imgsign2 {
+    display: block;
+}
+.imgsign {
+   display: none;
+}
+
+.stand-alone ul .ranking .hover,.web-game ul .ranking .hover, .application ul .ranking .hover, .Crack ul .ranking .hover{
     display: block;
 }
 
-.stand-alone ul .ranking .none, .web-game ul .ranking .none {
+.stand-alone ul .ranking .none, .web-game ul .ranking .none, .application ul .ranking .none, .Crack ul .ranking .none {
     display: none;
 }
 
-.web-game {
+.web-game, .application,.Crack {
     float:left;
     width: 270px;
     margin-left: 28px;
@@ -288,4 +414,102 @@ form {
 
 .web-game ul li .num {
     background: #5fc700;
+}
+
+.application .title {
+    background: #19b5fe
+}
+
+.application ul li .num {
+    background: #19b5fe;
+}
+
+.application .title i {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 36px;
+    margin: 9px 8px 0 60px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -69px -214px;
+}
+
+.Crack .title {
+    background: #ff9900;
+}
+
+.Crack ul li .num {
+    background: #ff9900;
+}
+
+.Crack .title i {
+    display: block;
+    float: left;
+    height: 30px;
+    width: 36px;
+    margin: 9px 8px 0 60px;
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat -102px -214px;
+}
+
+
+
+/*友情链接*/
+.friendly-link {
+    padding:16px 15px 0 15px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.friendly-link .by-inside span em {
+    background: url(http://www.5577.com/skin/library/images/icon.png) no-repeat scroll -210px -105px;
+}
+
+.official-website {
+    overflow: hidden;
+    line-height: 23px;
+    padding: 10px 0;
+}
+
+.official-website li {
+    float: left;
+    padding: 0 8px;
+}
+
+/*底部*/
+
+.bottom {
+    min-width: 1200px;
+    padding: 23px 0;
+    background: #333;
+}
+
+.bottom p{
+    padding: 3px 0;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.bottom p a {
+    color: #f8f8f8;
+}
+
+.bottom p i {
+    padding: 0 6px;
+}
+
+.bottom .gajg {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 0 0 15px;
+}
+.bottom .gajg-link {
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+}
+
+.bottom .gajg-link .title {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 0 0 5px;
+    color: #939393;
 }

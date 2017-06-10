@@ -23,7 +23,6 @@
 
 .word-right a:hover{
     color: #ff6600;
-    border-bottom: 1px solid #ff6600;
 }
 
 a {
@@ -31,6 +30,9 @@ a {
     color: #666;
     transition: color 300ms ease 0s, background-color 300ms ease 0s;
 }
+
+
+
 
 .word-right i {
     padding: 0 6px;
@@ -237,6 +239,19 @@ li {
     width: 280px;
     height: 96px;
     background: #1f272b;
+}
+
+.yx-case-type li .rj-name a:hover {
+    color: #ff6600;
+    text-decoration:underline;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.yx-newFb li .rj-newFb .fb-name a:hover {
+    color: #ff6600;
 }
 
 .yx-detail .yx-xtp img {
@@ -477,9 +492,6 @@ font {
     display: none;
 }
 
-#come {
-    display: block;
-}
 
 .yx-sjwy {
     background: #fff;
@@ -739,7 +751,18 @@ font {
 .hot-chart li a img {
     width: 280px;
     height: 150px;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
 }
+
+.hot-chart li a img:hover {
+    transform: scale(1.1);
+}
+
+/*.groom .yx-chart:hover {*/
+    /*top:-96px;*/
+    /*transition: top 500ms ease 0s*/
+/*}*/
 
 .move-hover, .hot-chart li a .move-hover {
     position: absolute;
