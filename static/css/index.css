@@ -1,5 +1,5 @@
 .navTop {
-    width: 100%;
+    min-width: 1200px;
     height: 29px;
     line-height: 29px;
     background: #f2f2f2;
@@ -106,7 +106,7 @@ input {
 }
 
 .nav {
-    width: 100%;
+    min-width: 1200px;
     height: 40px;
     line-height: 40px;
     background: #333;
@@ -123,6 +123,11 @@ input {
 
 .nav .showOut li:hover{
     background: #ff6600;
+
+}
+
+.nav .showOut li a:hover{
+    text-decoration: none;
 }
 
 li {
@@ -158,6 +163,7 @@ li {
 }
 
 .page {
+    min-width: 1200px;
     background: #f2f2f2;
 }
 

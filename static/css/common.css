@@ -1,6 +1,8 @@
 /*公用样式*/
 body {
-    font:12px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial
+    font:12px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial;
+    margin:0;
+    padding:0;
 }
 body {
     background-color: #f8f8f8;
