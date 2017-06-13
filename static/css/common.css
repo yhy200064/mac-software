@@ -24,6 +24,7 @@ p, form, ul, li, dl, dt, dd{
 form {
     display: block;
 }
+
 .yx-new-use .title, .rj-rmsy .title, .yx-sjwy .title, .hot_article .title, .weekly_pick .title{
     height: 40px;
     line-height: 40px;
@@ -42,6 +43,33 @@ form {
     border-bottom: 2px solid #ff6600;
     overflow: hidden;
 }
+
+#gotoBox {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    width: 41px;
+    cursor: pointer;
+    margin-left: 629px;
+    margin-top: -50px;
+}
+
+#gotoBox i {
+    background: url(http://www.5577.com/skin/library/images/gotop.png) no-repeat scroll 0 0;
+}
+
+#gotoBox i {
+    display: block;
+    width: 46px;
+    height: 46px;
+    padding: 4px 4px;
+    line-height: 36px;
+    font-style: normal;
+    text-align: center;
+    border-radius: 3px;
+}
+
 .by-inside span {
     display: block;
     float: left;
@@ -85,6 +113,7 @@ form {
 .yx-newFb li .rj-newFb .none{
     display: none
 }
+
 
 
 .zxsy-sort ul .hover- {
@@ -168,10 +197,7 @@ form {
     color: #ff6600;
 }
 
-/*.hot_article ul li a .sign .name:hover{*/
-    /*color: #ff6600;*/
 
-/*}*/
 
 .hot_article ul li a:hover {
     text-decoration: none;

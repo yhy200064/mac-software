@@ -1,0 +1,43 @@
+.btn-button {
+    width:700px;
+    text-align: center;
+    border:0; outline:none;
+    background:#ff6600
+}
+
+img {
+    width: 90px;
+    height: 90px;
+}
+
+.game-manager {
+    width: 840px;
+    margin: auto;
+    overflow: hidden
+}
+
+.all-software {
+    margin-right: 40px;
+    height: 200px;
+    float: left;
+    width:100px;
+}
+
+
+.all-software p {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.all-software span {
+    overflow:hidden;
+    white-space: nowrap;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
