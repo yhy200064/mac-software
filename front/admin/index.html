@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/admin.css">
+</head>
+<body>
+
+<ul class="nav nav-tabs" style="padding-left: 200px;">
+    <li role="presentation" class="active"><a href="/admin">发布中心</a></li>
+    <li role="presentation"><a href="admin/newest">游戏</a></li>
+    <li role="presentation"><a href="#">手游</a></li>
+    <li role="presentation"><a href="#">应用</a></li>
+</ul>
+<div style="width: 880px; margin: auto;">
+<div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input style="width:300px" class="form-control"  id="title" name="title"  placeholder="游戏标题">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input style="width: 300px" class="form-control" id="type" name="type" placeholder="游戏类型">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input style="width: 300px" class="form-control" id="size"  name="size" placeholder="游戏大小">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input style="width: 300px" class="form-control" id="edition" name="edition" placeholder="游戏版本">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input style="width:755px" id="img" name="img" class="form-control" placeholder="游戏图片">
+                <button id="button" class="btn-button" style="">发布</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../../static/js/jquery.js"></script>
+<script src="../../static/js/admin/admin.js"></script>
+</body>
+</html>
