@@ -7,17 +7,18 @@ class AdminHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('admin/index.html')
 
-class NewestHandler(tornado.web.RequestHandler):
+class AdminNewestHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('admin/newest.html')
 
 
-class SoftwareHandler(tornado.web.RequestHandler):
+class AdminApiSoftwareHandler(tornado.web.RequestHandler):
     def post(self):
         title = self.get_argument('title')
         type = self.get_argument('type')
         size = self.get_argument('size')
         img = self.get_argument('img')
+        assess = self.get_argument('assess')
         edition = self.get_argument('edition')
         db = torndb.Connection(host = 'localhost', database = 'yhy', user = 'root', password = '88888888')
         if title == '':
@@ -32,7 +33,10 @@ class SoftwareHandler(tornado.web.RequestHandler):
         if img == '':
             self.write({'code': 0})
             return
-        data = db.insert('insert into software value(%s, %s, %s, %s, %s, %s, %s)', None, title, type, size, img, edition, None)
+        if assess == '':
+            self.write({'code': 0})
+            return
+        data = db.insert('insert into software value(%s, %s, %s, %s, %s, %s, %s, %s)', None, title, type, size, img, assess, edition, None)
         db.close()
         self.write({'code': 1})
 
@@ -48,6 +52,7 @@ class AdminApiNewestHandler(tornado.web.RequestHandler):
             software['type'] =software.type
             software['size'] = software.size
             software['img'] = software.img
+            software['assess'] = software.assess
             software['edition'] = software.edition
             software['created_at'] = software.created_at.strftime("%Y-%m-%d %H:%M:%S")
         db.close()
