@@ -10,6 +10,7 @@
 <ul class="nav nav-tabs" style="padding-left: 200px">
     <li role="presentation"><a href="/admin">发布中心</a></li>
     <li role="presentation" class="active"><a href="admin/newest">游戏</a></li>
+     <li role="presentation"><a href="/admin/collection">合辑</a></li>
     <li role="presentation"><a href="#">手游</a></li>
     <li role="presentation"><a href="#">应用</a></li>
 </ul>
@@ -23,6 +24,7 @@
             <p><span>类型：<%= software[i].type %></span></p>
             <p><span>大小：<%= software[i].size %></span></p>
             <p><span>版本：<%= software[i].edition %></span></p>
+            <div><span>评星：<img src="<%= software[i].assess %>"></span></div>
         </div>
         <% } %>
    </script>
