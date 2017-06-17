@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>合集管理</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/css/admin.css">
 </head>
@@ -10,23 +10,23 @@
 <ul class="nav nav-tabs" style="padding-left: 200px">
     <li role="presentation"><a href="/admin">发布中心</a></li>
     <li role="presentation"><a href="/admin/newest">游戏</a></li>
-     <li role="presentation" class="active"><a href="/admin/collection">合辑</a></li>
+     <li role="presentation" class="active"><a href="/admin/collection">合集</a></li>
     <li role="presentation"><a href="#">手游</a></li>
     <li role="presentation"><a href="#">应用</a></li>
 </ul>
-<div id="newest-collection">
-    <script type="text/html" id="new-collection">
+<div id="all-newest-collection">
+    <script type="text/html" id="all-new-collection">
         <% for (var i = 0; i < collection.length; i++){ %>
-        <div class="">
+        <div class="neirong">
             <p><img src="<%= collection[i].img %>"></p>
-            <p><%= collection[i].name %></p>
-            <p><span><%= collection[i].introduce %></span></p>
+            <p style="font-size: 16px"><%= collection[i].name %></p>
+            <p class="js"><span><%= collection[i].introduce %></span></p>
         </div>
         <% } %>
    </script>
 </div>
 <script src="../../static/js/template-web.js"></script>
 <script src="../../static/js/jquery.js"></script>
-<script src="../../static/js/latest-collection.js"></script>
+<script src="../../static/js/all-latest-collection.js"></script>
 </body>
 </html>

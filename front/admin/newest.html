@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>游戏管理</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/css/admin.css">
 </head>
@@ -10,28 +10,56 @@
 <ul class="nav nav-tabs" style="padding-left: 200px">
     <li role="presentation"><a href="/admin">发布中心</a></li>
     <li role="presentation" class="active"><a href="admin/newest">游戏</a></li>
-     <li role="presentation"><a href="/admin/collection">合辑</a></li>
+    <li role="presentation"><a href="/admin/collection">合集</a></li>
     <li role="presentation"><a href="#">手游</a></li>
     <li role="presentation"><a href="#">应用</a></li>
 </ul>
 <div class="game-manager">
-<div id="newest-game">
-    <script type="text/html" id="new-game">
-        <% for (var i = 0; i < software.length; i++){ %>
-        <div class="all-software">
-            <p><img src="<%= software[i].img %>"></p>
-            <p><%= software[i].title %></p>
-            <p><span>类型：<%= software[i].type %></span></p>
-            <p><span>大小：<%= software[i].size %></span></p>
-            <p><span>版本：<%= software[i].edition %></span></p>
-            <div><span>评星：<img src="<%= software[i].assess %>"></span></div>
-        </div>
-        <% } %>
-   </script>
+     <p style="font-size: 25px;color:#f60; position: relative; top:20px; margin-top: 16px;">安卓游戏</p>
+    <div id="newest-game">
+        <script type="text/html" id="new-game">
+            <% for (var i = 0; i < software.length; i++){ %>
+            <div class="all-software">
+                <p><img src="<%= software[i].img %>"></p>
+                <p><%= software[i].title %></p>
+                <div class="game-hover">
+                    <p><span>类型：<%= software[i].type %></span></p>
+                    <p><span>大小：<%= software[i].size %></span></p>
+                    <p><span>版本：<%= software[i].edition %></span></p>
+                    <p><span>等级：<img src="<%= software[i].assess %>"></span></p>
+                </div>
+                <button data-id="<%= software[i].id%>" class="shangchu">删除数据</button>
+            </div>
+            <% } %>
+        </script>
+    </div>
 </div>
+
+
+<div class="game-manager">
+    <p style="font-size: 25px; color:#f60; position: relative; top:20px; margin-top: 16px;">苹果游戏</p>
+    <div id="all-mac-new-game">
+        <script type="text/html" id="all-mac-game">
+            <% for (var i = 0; i < software.length; i++){ %>
+            <div class="all-software">
+                <p><img src="<%= software[i].img %>"></p>
+                <p><%= software[i].title %></p>
+                <div class="game-hover">
+                    <p><span>类型：<%= software[i].type %></span></p>
+                    <p><span>大小：<%= software[i].size %></span></p>
+                    <p><span>版本：<%= software[i].edition %></span></p>
+                    <p><span>等级：<img src="<%= software[i].assess %>"></span></p>
+                </div>
+                <button data-id="<%= software[i].id%>" class="shangchu">删除数据</button>
+            </div>
+            <% } %>
+        </script>
+    </div>
 </div>
 <script src="../../static/js/template-web.js"></script>
 <script src="../../static/js/jquery.js"></script>
 <script src="../../static/js/admin/newest.js"></script>
+<script src="../../static/js/admin/delsoftware.js"></script>
+<script src="../../static/js/admin/mac-game.js"></script>
 </body>
 </html>
