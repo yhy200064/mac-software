@@ -12,15 +12,25 @@ $(document).ready(function () {
     rankingListBindEvents();//排行榜
     arrowBindEvents();//向上滑动箭头
     latestReleaseBindEvents();//最新发布
+    dropdownboxBindEvents();//下拉框
+
 });
 
+function dropdownboxBindEvents() {
+     $('.nav .showOut li').mouseenter(function () {
+        $(this).children('.drop-down').stop().animate({height: '80px'});
+    });
+     $('.nav .showOut li').mouseleave(function () {
+        $(this).children('.drop-down').stop().animate({height: '0'});
+    });
+}
 
 function hotCollectionBindEvents() {
-    $('.hot-set .hot-chart .hot-chart-sign').mouseenter(function () {
+    $('#newest-collection').on('mouseenter', '.hot-chart-sign', function () {
         $(this).find('.move-hover').stop().animate({height: '150px'});
     });
 
-    $('.hot-set .hot-chart .hot-chart-sign').mouseleave(function () {
+    $('#newest-collection').on('mouseleave', '.hot-chart-sign', function () {
         $(this).find('.move-hover').animate({height: '30px'});
     });
 }
@@ -42,6 +52,20 @@ function latestReleaseBindEvents() {
         $('.fb-hot').not(this).find('.lx-rl').css('display', 'block');
         $('.fb-hot').not(this).find('.xs').css('display', 'none')
     });
+    $('.yx-new-case .by-inside .yx-xt .pg').mouseenter(function() {
+        $(this).css('background', '#f60');
+        $(this).css('color', '#fff');
+        $('.yx-new-case .by-inside .yx-xt .az-hover').css('background', '#f5f5f5');
+        $('.yx-new-case .by-inside .yx-xt .az-hover').css('color', '#333');
+        $('#latestgame').css('display', 'none');
+    });
+    $('.yx-new-case .by-inside .yx-xt .az-hover').mouseenter(function() {
+        $(this).css('background', '#f60');
+        $(this).css('color', '#fff');
+        $('.yx-new-case .by-inside .yx-xt .pg').css('background', '#f5f5f5');
+        $('.yx-new-case .by-inside .yx-xt .pg').css('color', '#333');
+        $('#latestgame').css('display', 'block');
+    })
 }
 
 function hotMobilegamesBindEvents() {

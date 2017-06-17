@@ -1,29 +1,22 @@
 /**
- * Created by yhy on 2017/6/11.
+ * Created by yhy on 2017/6/17.
  */
 (function ($) {
-    $('#button').on('click', function() {
-        postSoftware();
+    $('#mac-button').on('click', function() {
+        macpostSoftware();
     });
 
-    // document.onkeydown = function (event) {
-    //     var e = event || window.event || arguments.callee.caller.arguments[0];
-    //     if(e && e.keyCode == 13){
-    //         postSoftware()
-    //     }
-    // };
-
-    function postSoftware() {
+    function macpostSoftware() {
         var params = {
-            title: $('#title').val(),
-            type: $('#type').val(),
-            size: $('#size').val(),
-            img: $('#img').val(),
-            assess: $('#assess').val(),
-            edition: $('#edition').val()
+            name: $('#mac-name').val(),
+            type: $('#mac-type').val(),
+            size: $('#mac-size').val(),
+            img: $('#mac-img').val(),
+            assess: $('#mac-assess').val(),
+            edition: $('#mac-edition').val()
         };
         $.ajax({
-            url: '/admin/api/software',
+            url: '/admin/api/mac/software',
             type: 'POST',
             data: params,
             dataType: 'json',
