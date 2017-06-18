@@ -10,6 +10,7 @@
 </head>
 <body>
 <div id="bdshare_s" ></div>
+<div></div>
 <div class="navTop">
     <div class="showOut">
         <p class="word-left">最全的安卓游戏、软件下载站</p>
@@ -48,7 +49,7 @@
             <a href="/">首页</a>
         </li>
          <li>
-            <a href="">游戏</a>
+            <a href="/games">游戏</a>
         </li>
         <li>
             <a href="">网游</a>
@@ -60,8 +61,15 @@
             <a href="">资讯</a>
         </li>
         <li>
-            <a href="">合集</a>
-            <ul class="drop-down"></ul>
+            <a href="/collection">合集</a>
+             <ul class="drop-down">
+                <li>
+                    <a href="">主题标签</a>
+                </li>
+                <li>
+                    <a href="">游戏专区</a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="">产品库</a>
@@ -782,72 +790,26 @@
                 <div class="hot-set">
                     <div class="hot-collection">
                         <p class="title hot-left">热门合集</p>
-                        <a href="" class="gd">更多+</a>
+                        <a href="/collection" class="gd">更多+</a>
                     </div>
-                    <ul class="hot-chart">
-                        <li class="hot-chart-sign">
-                            <a href="">
-                                <img src="http://pic.5577.com/up/2017-6/2017661422337300.jpg" alt="Steam移植手机游戏">
-                                <div class="move-hover">
-                                    <p>Steam移植手机游戏</p>
-                                    <div class="cover-down">
-                                        <p>
-                                            为各位玩家朋友们带来众多2017steam移
-                                            植到安卓手机平台的游戏大全！
-                                            <span style="line-height: 12px">steam有很多非常优秀的游戏，很多玩家都是非常的喜欢。但是由于一些其他原因你们不能
-                                            玩，那怎么办？这些游戏厂商为推出众多的手机移植版本，让你轻松享受游戏快感。Steam移植安卓游戏现已整理推出，喜欢的玩家朋友们可不要错过咯，现在就来看看哪一款是你们期待和感兴趣的吧</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hot-chart-sign">
-                            <a href="">
-                                <img src="http://pic.5577.com/up/2017-6/201765194143623.jpg" alt="很火的泼墨字软件">
-                                <div class="move-hover">
-                                    <p>很火的泼墨字软件</p>
-                                    <div class="cover-down">
-                                        <p>
-                                            最近网上非常流行泼墨字，很多人还不知道用过什么软件可以制作泼墨字。不知道
-                                            泼墨字软件叫什么，本站为大家整理了一些最近非常火的泼墨字软件下载资源，其中无疑是以zenbrush2和picsart这两款软件，喜欢泼墨字风格的朋友赶紧来下载吧！
-                                            <span style="line-height: 12px">zenbrush泼墨字教程、</span>
-                                            <span style="line-height: 12px">picsart泼墨字教程分享给大家！</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hot-chart-sign">
-                            <a href="">
-                                <img src="http://pic.5577.com/up/2017-6/201761195215242.jpg" alt="类似监狱建筑师">
-                                <div class="move-hover">
-                                    <p>很火的泼墨字软件</p>
-                                    <div class="cover-down">
-                                        <p>
-                                            类似监狱建筑师
-                                            <span style="line-height: 12px">
-                                                类似监狱建筑师的手机游戏分享给大家。监狱建筑师这款经典的监狱逃脱游戏终于来到了手机上，很多试玩过的玩家们反应
-                                                都很不错，想寻找一些玩法差不多的手机游戏，这里小编为大家整理了一下，大家可以挑选喜欢的下载！
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="hot-chart-sign">
-                            <a href="">
-                                <img src="http://pic.5577.com/up/2017-6/201761194296510.jpg" alt="类似地上终末之日生存">
-                                <div class="move-hover">
-                                    <p>类似地上终末之日生存</p>
-                                    <div class="cover-down">
-                                        <p>
-                                            地上终末之日生存是一个僵尸生存游戏。游戏中玩家操控主角在地球末日中挣扎求生，高自由度的沙盒地图让游戏更加耐玩
-                                            和充满不可预见性。“生存、沙盒”这两个元素可谓是近几年游戏中的大热词，这里小编就为大家整理了一些和地上终末之日差不多的生存手机游戏，大家可以选择喜欢的下载！
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                    <ul id="newest-collection" class="hot-chart">
+                         <script type="text/html" id="new-collection">
+                             <% for (var i = 0; i < collection.length; i++){ %>
+                             <li class="hot-chart-sign">
+                                 <a href="">
+                                     <img src="<%= collection[i].img %>" alt="<%= collection[i].name %>">
+                                     <div class="move-hover">
+                                         <p><%= collection[i].name %></p>
+                                         <div class="cover-down">
+                                             <p>
+                                                 <%= collection[i].introduce %>
+                                             </p>
+                                         </div>
+                                     </div>
+                                 </a>
+                             </li>
+                             <% } %>
+                         </script>
                     </ul>
                </div>
             </div>
@@ -887,8 +849,11 @@
 </div>
 <div id="gotoBox"><i></i></div>
 <aside id="side" class="side-wrap"></aside>
+<!--<a href="" id="ad-tupian"></a>-->
 <script src="../static/js/template-web.js"></script>
 <script src="../static/js/jquery.js"></script>
 <script src="../static/js/game-latest.js"></script>
+<script src="../static/js/macgame-newest.js"></script>
+<script src="../static/js/latest-collection.js"></script>
 </body>
 </html>

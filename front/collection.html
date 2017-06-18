@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新合集列表_5577我机网</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/collection.css">
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/img/img.js"></script>
+</head>
+<body>
+<div class="navTop">
+    <div class="showOut">
+        <p class="word-left">最全的安卓游戏、软件下载站</p>
+        <p class="word-right">
+            <a href="">手机版</a>
+            <i>|</i>
+            <a href="">最近更新</a>
+            <i>|</i>
+            <a href="">安卓排行</a>
+            <i>|</i>
+            <a href="">安卓专题</a>
+            <i>|</i>
+            <a href="">论坛转帖</a>
+        </p>
+    </div>
+</div>
+<div class="head">
+    <div class="showOut">
+        <p class="from-logo word-left">
+            <a href="/" title="5577我机网">
+                <img src="http://www.5577.com/skin/library/images/logo.gif">
+            </a>
+            <em></em>
+        </p>
+        <form id="fromForm" method="get" action="">
+            <div id="search">
+                <input type="text" class="s_into" id="keyword" name="q" placeholder="请搜索您要查找的游戏" autocomplete="off">
+                <input type="submit" class="souSuo" value="搜索">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="nav">
+    <ul class="showOut">
+        <li>
+            <a href="/">首页</a>
+        </li>
+        <li>
+            <a href="/games">游戏</a>
+        </li>
+        <li>
+            <a href="">网游</a>
+        </li>
+        <li>
+            <a href="">应用</a>
+        </li>
+        <li>
+            <a href="">资讯</a>
+        </li>
+        <li class="click">
+            <a href="/collection">合集</a>
+            <ul class="drop-down">
+                <li>
+                    <a href="">主题标签</a>
+                </li>
+                <li>
+                    <a href="">游戏专区</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">产品库</a>
+        </li>
+    </ul>
+</div>
+<div id="head-ad">
+    <div class="ad-picture">
+        <ul class="ad-img">
+            <li class="img">
+                <a href="">手机成人游戏</a>
+            </li>
+            <li class="dr-img">
+                <a href="">精神病院游戏合集</a>
+            </li>
+            <li class="ds-img">
+                <a href="">精神病院游戏合集</a>
+            </li>
+        </ul>
+        <ul id ="spots">
+            <li class="current">
+                <a href="#"></a>
+            </li>
+            <li class="">
+                <a href="#"></a>
+            </li>
+            <li class="">
+                <a href="#"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="all-collection" class="main-content middle">
+    <div class="collection-title">
+        <p class="title">全部合集</p>
+    </div>
+    <div class="Collection-content" id="collection-content">
+        <div id="all-newest-collection">
+            <script type="text/html" id="all-new-collection">
+                <ul>
+                    <% for (var i = 0; i < collection.length; i++){ %>
+                    <li class="Newest-collection">
+                        <a href="">
+                            <img src="<%= collection[i].img %>">
+                        </a>
+                        <p class="name">
+                            <a href=""><%= collection[i].name %></a>
+                        </p>
+                        <p class="resource">
+                            <span>暂无资源</span>
+                        </p>
+                        <p class="introduce"><%= collection[i].introduce %></p>
+                    </li>
+                    <% } %>
+                </ul>
+            </script>
+        </div>
+    </div>
+
+    <div class="paging">
+        <div class="paging-sign">
+            <style>
+                .paging-sign i {
+                    font-style: normal;
+                }
+
+                .paging-sign a {
+                    color: #000;
+                    text-decoration: none;
+                    padding: 0 3px;
+                }
+
+                .paging-sign a:hover {
+                    text-decoration: underline;
+                }
+
+                .paging-sign .tsp_count {
+                    float: left;
+                }
+
+                .tsp_count i {
+                    color: #f00;
+                }
+
+                .paging-sign b {
+                    color: #f00;
+                }
+            </style>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <p>
+        <a href="">关于我机网</a>
+        <i>|</i>
+        <a href="">联系方式</a>
+        <i>|</i>
+        <a href="">发展历程</a>
+        <i>|</i>
+        <a href="">下载帮助(？)</a>
+        <i>|</i>
+        <a href="">广告联系</a>
+        <i>|</i>
+        <a href="">网站地图</a>
+        <i>|</i>
+        <a href="">友情链接</a>
+    </p>
+    <p>
+        Copyright 2011-2016 5577.com我机网 鄂ICP备15005058号-1
+        <span>鄂网文许字【2014】1196</span>
+        <span class="gajg">
+          <a class="gajg-link" href="">
+              <img src="http://www.5577.com/skin/library/images/gongan.png">
+              <span class="title">鄂公网安备 42011102000604号</span>
+          </a>
+      </span>
+    </p>
+</div>
+<div id="gotoBox"><i></i></div>
+<aside id="side" class="side-wrap"></aside>
+
+
+<script src="../static/js/template-web.js"></script>
+<script src="../static/js/jquery.js"></script>
+<script src="../static/js/all-latest-collection.js"></script>
+</body>
+</html>
