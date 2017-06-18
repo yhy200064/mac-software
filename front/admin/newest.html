@@ -19,7 +19,7 @@
     <div id="newest-game">
         <script type="text/html" id="new-game">
             <% for (var i = 0; i < software.length; i++){ %>
-            <div class="all-software">
+            <div class="anzuo all-software">
                 <p><img src="<%= software[i].img %>"></p>
                 <p><%= software[i].title %></p>
                 <div class="game-hover">
@@ -41,9 +41,9 @@
     <div id="all-mac-new-game">
         <script type="text/html" id="all-mac-game">
             <% for (var i = 0; i < software.length; i++){ %>
-            <div class="all-software">
+            <div class="pengguo all-software">
                 <p><img src="<%= software[i].img %>"></p>
-                <p><%= software[i].title %></p>
+                <p><%= software[i].name %></p>
                 <div class="game-hover">
                     <p><span>类型：<%= software[i].type %></span></p>
                     <p><span>大小：<%= software[i].size %></span></p>
