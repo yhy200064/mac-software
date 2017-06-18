@@ -16,6 +16,7 @@ $(document).ready(function () {
 
 });
 
+
 function dropdownboxBindEvents() {
      $('.nav .showOut li').mouseenter(function () {
         $(this).children('.drop-down').stop().animate({height: '80px'});
@@ -52,12 +53,21 @@ function latestReleaseBindEvents() {
         $('.fb-hot').not(this).find('.lx-rl').css('display', 'block');
         $('.fb-hot').not(this).find('.xs').css('display', 'none')
     });
+
+    $('#newest-macgame').on('mouseenter', '.mac-fb-hot', function(){
+        $(this).find('.xs').css('display', 'block');
+        $(this).find('.lx-rl').css('display', 'none');
+        $('.mac-fb-hot').not(this).find('.lx-rl').css('display', 'block');
+        $('.mac-fb-hot').not(this).find('.xs').css('display', 'none')
+    });
+
     $('.yx-new-case .by-inside .yx-xt .pg').mouseenter(function() {
         $(this).css('background', '#f60');
         $(this).css('color', '#fff');
         $('.yx-new-case .by-inside .yx-xt .az-hover').css('background', '#f5f5f5');
         $('.yx-new-case .by-inside .yx-xt .az-hover').css('color', '#333');
         $('#latestgame').css('display', 'none');
+        $('#newest-macgame').css('display', 'block');
     });
     $('.yx-new-case .by-inside .yx-xt .az-hover').mouseenter(function() {
         $(this).css('background', '#f60');
@@ -65,6 +75,7 @@ function latestReleaseBindEvents() {
         $('.yx-new-case .by-inside .yx-xt .pg').css('background', '#f5f5f5');
         $('.yx-new-case .by-inside .yx-xt .pg').css('color', '#333');
         $('#latestgame').css('display', 'block');
+        $('#newest-macgame').css('display', 'none');
     })
 }
 
@@ -126,16 +137,16 @@ function arrowBindEvents() {
         var winHeight = $(document).scrollTop();
 
         $(window).scroll(function () {
-            var scrollY = $(document).scrollTop();// 获取垂直滚动的距离，即滚动了多少
+            var scrollY = $(document).scrollTop();
 
-            if (scrollY > 570) { //如果滚动距离大于570px则显示
+            if (scrollY > 570) {
                 $('#gotoBox').css('display', 'block');
             }
             else {
                 $('#gotoBox').css('display', 'none');
             }
 
-            if (scrollY > winHeight) { //如果没滚动到顶部则显示，否则隐藏
+            if (scrollY > winHeight) {
                 $('#gotoBox').css('display', 'block')
             }
             else {
@@ -143,7 +154,7 @@ function arrowBindEvents() {
             }
 
         });
-        $("#gotoBox i").mouseenter(function () {
+        $("#gotoBox i").click(function () {
             $('body,html').animate({
                 scrollTop: 0
             }, 1000);

@@ -6,6 +6,7 @@
     $('#newest-game').on('click', '.shangchu', function () {
         var id = this.getAttribute('data-id');
         delCollection(id);
+        window.location.reload();
     });
 
     function delCollection(id) {
@@ -19,7 +20,6 @@
                 console.log('成功:', data);
                 if (data.code == 1) {
                     alert('删除成功');
-                    window.location.reload();
                 } else if (data.code == 0) {
                     alert('删除失败')
                 }
