@@ -25,6 +25,41 @@ form {
     display: block;
 }
 
+#ad-tupian {
+   width: 100%;
+    height: 800px;
+    display: block;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background: url(http://www.5577.com/skin/2016/images/kpad/miwu.jpg) center top;
+}
+
+.yx-newFb .mac-fb-hot .rj-newFb .fb-name i {
+    background-color: #ff4b4b;
+}
+#newest-macgame {
+    display: none;
+ }
+
+.drop-down {
+    height: 0;
+    background: #000 none repeat scroll 0 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.drop-down li {
+    float: none;
+    clear: both;
+    border-bottom: 1px solid #333;
+    background: #000;
+}
+
+.drop-down li a {
+    font-size: 16px;
+}
+
 .yx-new-use .title, .rj-rmsy .title, .yx-sjwy .title, .hot_article .title, .weekly_pick .title{
     height: 40px;
     line-height: 40px;

@@ -752,6 +752,7 @@ font {
     width: 280px;
     height: 150px;
     margin: 0 16px 0 0;
+    overflow: hidden;
 }
 
 .hot-chart li a img {
@@ -763,12 +764,9 @@ font {
 
 .hot-chart li a img:hover {
     transform: scale(1.1);
+     width: 280px;
 }
 
-/*.groom .yx-chart:hover {*/
-    /*top:-96px;*/
-    /*transition: top 500ms ease 0s*/
-/*}*/
 
 .move-hover, .hot-chart li a .move-hover {
     position: absolute;
