@@ -1,51 +1,106 @@
 <div class="yx-new-case">
-            <div class="by-inside">
+    <div class="by-inside">
                 <span>
                     <em></em>
                     最新
                     <i>发布</i>
                 </span>
-                <ul class="yx-xt">
-                    <li class="az-hover">安卓</li>
-                    <li>苹果</li>
-                </ul>
-            </div>
-           <ul id="latestgame" class="yx-newFb rj-ease">
-               <script type="text/html" id="newgame">
-                   <% for (var i = 0; i < software.length; i++){ %>
-                   <li class="fb-hot">
-                       <div class="rj-newFb">
-                           <p class="fb-name">
-                               <i <% if(i === 3 || i === 4 || i === 5 || i === 6 || i=== 7){ %> style="background-color: #b4b4b4" <% } %> ><%= i+1 %></i>
-                               <a href=""><%= software[i].title %></a>
-                           </p>
+        <ul class="yx-xt">
+            <li class="az-hover">安卓</li>
+            <li class="pg">苹果</li>
+        </ul>
+    </div>
+    <ul id="latestgame" class="yx-newFb rj-ease">
+        <script type="text/html" id="newgame">
+            <% for (var i = 0; i < software.length; i++){ %>
+            <li class="fb-hot">
+                <div class="rj-newFb">
+                    <p class="fb-name">
+                        <i <% if(i === 3 || i === 4 || i === 5 || i === 6 || i=== 7){ %> style="background-color:
+                        #b4b4b4" <% } %> ><%= i+1 %></i>
+                        <a href=""><%= software[i].title %></a>
+                    </p>
 
-                           <p class="lx-rl" <% if(i === 0){ %> style="display:none" <% } %> >
-                               <%= software[i].type %>
-                               <i>/</i>
-                               <%= software[i].size %>
-                           </p>
-                           <div class="xs" <% if(i === 0){ %> style="display:block" <% } %> >
-                               <a href="">
-                                   <img src="<%= software[i].img %>">
-                               </a>
-                               <p>
-                                   <%= software[i].type %>
-                                   <br>
-                                   <font class="hs"><%= software[i].created_at %></font>
-                                   <br>
-                                   <img src="<%= software[i].assess %>">
-                               </p>
-                           </div>
-                       </div>
-                       <p class="rj-data">
-                           <font class="hs"><%= software[i].created_at %></font>
-                       </p>
-                   </li>
-                   <% } %>
-               </script>
-           </ul>
-       </div>
+                    <p class="lx-rl" <% if(i === 0){ %> style="display:none" <% } %> >
+                    <%= software[i].type %>
+                    <i>/</i>
+                    <%= software[i].size %>
+                    </p>
+                    <div class="xs"
+                    <% if(i === 0){ %> style="display:block" <% } %> >
+                    <a href="">
+                        <img src="<%= software[i].img %>">
+                    </a>
+                    <p>
+                        <%= software[i].type %>
+                        <br>
+                        <% if (software[i].is_today){ %>
+                        <span style="color: red;"><%= software[i].created_at %></span>
+                        <% }else{ %>
+                        <span><%= software[i].created_at %></span>
+                        <% } %>
+
+                        <br>
+                        <img src="<%= software[i].assess %>">
+                    </p>
+                </div>
+                </div>
+                <p class="rj-data">
+                    <% if (software[i].is_today){ %>
+                    <span style="color: red;"><%= software[i].created_at %></span>
+                    <% }else{ %>
+                    <span><%= software[i].created_at %></span>
+                    <% } %>
+                </p>
+            </li>
+            <% } %>
+        </script>
+    </ul>
+    <ul id="newest-macgame" class="yx-newFb  rj-ease">
+        <script type="text/html" id="new-macgame">
+            <% for (var i = 0; i < software.length; i++){ %>
+            <li class="mac-fb-hot">
+                <div class="rj-newFb">
+                    <p class="fb-name">
+                        <i <% if(i === 3 || i === 4 || i === 5 || i === 6 || i=== 7){ %> style="background-color:#b4b4b4" <% } %> ><%= i+1 %></i>
+                        <a href=""><%= software[i].name %></a>
+                    </p>
+
+                    <p class="lx-rl" <% if(i === 0){ %> style="display:none" <% } %> >
+                    <%= software[i].type %>
+                    <i>/</i>
+                    <%= software[i].size %>
+                    </p>
+                    <div class="xs" <% if(i === 0){ %> style="display:block" <% } %> >
+                    <a href="">
+                        <img src="<%= software[i].img %>">
+                    </a>
+                    <p>
+                        <%= software[i].type %>
+                        <br>
+                        <% if (software[i].is_today){ %>
+                        <span style="color: red;"><%= software[i].created_at %></span>
+                        <% }else{ %>
+                        <span><%= software[i].created_at %></span>
+                        <% } %>
+
+                        <br>
+                        <img src="<%= software[i].assess %>">
+                    </p>
+                </div>
+                </div>
+                <p class="rj-data">
+                    <% if (software[i].is_today){ %>
+                    <span style="color: red;"><%= software[i].created_at %></span>
+                    <% }else{ %>
+                    <span><%= software[i].created_at %></span>
+                    <% } %>
+                </p>
+            </li>
+            <% } %>
+        </script>
+    </ul>
+</div>
 
 
 
