@@ -70,7 +70,6 @@ class AdminDelApiSoftwareHandler(tornado.web.RequestHandler):
         self.write({'code': 1})
         result = {}
         db.close()
-
         result['code'] = '0'
         result['body'] = {'software': id}
         result['message'] = '成功'
