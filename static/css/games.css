@@ -629,12 +629,12 @@ a:hover {
 .crack-starter .list-img .img-qiehuan ul {
     display: block;
     height: 100%;
-    width: 3072px;
+    width: 12048px;
     position: relative;
     overflow: hidden;
     padding: 0;
     margin: 0;
-    left: -1024px;
+    left: 0;
 }
 
 .crack-starter .list-img .img-qiehuan ul li {
@@ -882,10 +882,22 @@ a:hover {
 
 /*伪类*/
 
-.anzuo-game-tuijian .title ul li a:hover, .anzuo-game-tuijian .game-list li a strong:hover {
+.anzuo-game-tuijian .title ul li a:hover, .anzuo-game-tuijian .game-list li a strong:hover, .crack-starter .title a:hover {
+    color: #f60;
+}
+
+.week-new-game .title a:hover {
     color: #f60;
 }
 
 .anzuo-game-tuijian .game-list .frame {
     border: 1px solid #f60;
+}
+
+.week-new-game .img p.hover {
+    background:#f60;
+}
+
+.crack-starter .list-img .img-qiehuan ul li p.hover {
+    background-color: #f60;
 }

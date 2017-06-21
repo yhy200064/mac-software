@@ -151,9 +151,9 @@ form {
 
 
 
-.zxsy-sort ul .hover- {
+.zxsy-sort ul .xing-MobileGames {
     padding: 8px 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     overflow: hidden;
 }
 
@@ -178,7 +178,7 @@ form {
 }
 
 .zxsy-sort li .imgbox .name{
-    height: 17px;
+    height: 15px;
     padding: 0 0 10px;
     overflow: hidden;
 }
