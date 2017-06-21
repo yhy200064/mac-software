@@ -18,10 +18,10 @@ $(document).ready(function () {
 
 
 function dropdownboxBindEvents() {
-     $('.nav .showOut li').mouseenter(function () {
+    $('.nav .showOut li').mouseenter(function () {
         $(this).children('.drop-down').stop().animate({height: '80px'});
     });
-     $('.nav .showOut li').mouseleave(function () {
+    $('.nav .showOut li').mouseleave(function () {
         $(this).children('.drop-down').stop().animate({height: '0'});
     });
 }
@@ -47,21 +47,21 @@ function recommendBindEvents() {
 }
 
 function latestReleaseBindEvents() {
-    $('#latestgame').on('mouseenter', '.fb-hot', function(){
+    $('#latestgame').on('mouseenter', '.fb-hot', function () {
         $(this).find('.xs').css('display', 'block');
         $(this).find('.lx-rl').css('display', 'none');
         $('.fb-hot').not(this).find('.lx-rl').css('display', 'block');
         $('.fb-hot').not(this).find('.xs').css('display', 'none')
     });
 
-    $('#newest-macgame').on('mouseenter', '.mac-fb-hot', function(){
+    $('#newest-macgame').on('mouseenter', '.mac-fb-hot', function () {
         $(this).find('.xs').css('display', 'block');
         $(this).find('.lx-rl').css('display', 'none');
         $('.mac-fb-hot').not(this).find('.lx-rl').css('display', 'block');
         $('.mac-fb-hot').not(this).find('.xs').css('display', 'none')
     });
 
-    $('.yx-new-case .by-inside .yx-xt .pg').mouseenter(function() {
+    $('.yx-new-case .by-inside .yx-xt .pg').mouseenter(function () {
         $(this).css('background', '#f60');
         $(this).css('color', '#fff');
         $('.yx-new-case .by-inside .yx-xt .az-hover').css('background', '#f5f5f5');
@@ -69,7 +69,7 @@ function latestReleaseBindEvents() {
         $('#latestgame').css('display', 'none');
         $('#newest-macgame').css('display', 'block');
     });
-    $('.yx-new-case .by-inside .yx-xt .az-hover').mouseenter(function() {
+    $('.yx-new-case .by-inside .yx-xt .az-hover').mouseenter(function () {
         $(this).css('background', '#f60');
         $(this).css('color', '#fff');
         $('.yx-new-case .by-inside .yx-xt .pg').css('background', '#f5f5f5');
@@ -92,10 +92,28 @@ function hotMobilegamesBindEvents() {
 }
 
 function newhandtravelBindEvents() {
-    $('.hover-').hover(function () {
-        $(this).addClass('hover');
-        $('.hover-').not(this).removeClass('hover')
+    $('#newest-MobileGames').on('mouseenter', '.xing-MobileGames', function () {
+        $(this).children('.imgbox').css('display', 'block');
+        $('.xing-MobileGames').not(this).children('.imgbox').css('display', 'none');
+        $(this).children('.txtbox').css('display', 'none');
+        $('.xing-MobileGames').not(this).find('.txtbox').css('display', 'block')
     });
+
+    $('.zxsy-sort .title .yx-xt .az-hover').mouseenter(function () {
+        $(this).css('background', '#f60');
+        $(this).css('color', '#fff');
+        $('.zxsy-sort .title .yx-xt .pinguo').css('background', '#f5f5f5');
+        $('.zxsy-sort .title .yx-xt .pinguo').css('color', '#333');
+        $('#newest-MobileGames').css('display', 'block');
+    });
+
+    $('.zxsy-sort .title .yx-xt .pinguo').mouseenter(function () {
+        $(this).css('background', '#f60');
+        $(this).css('color', '#fff');
+        $('.zxsy-sort .title .yx-xt .az-hover').css('background', '#f5f5f5');
+        $('.zxsy-sort .title .yx-xt .az-hover').css('color', '#333');
+        $('#newest-MobileGames').css('display', 'none');
+    })
 }
 
 
@@ -139,7 +157,7 @@ function arrowBindEvents() {
         $(window).scroll(function () {
             var scrollY = $(document).scrollTop();
 
-            if (scrollY > 570) {
+            if (scrollY > 560) {
                 $('#gotoBox').css('display', 'block');
             }
             else {
