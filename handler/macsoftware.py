@@ -50,3 +50,16 @@ class AdminApiMacGetSoftwareHandler(tornado.web.RequestHandler):
         result['body'] = {'software': softwares}
         result['message'] = '成功'
         self.write(json_encode(result))
+
+class AdminDelApiMacSoftwareHandler(tornado.web.RequestHandler):
+    def post(self):
+        id = self.get_argument('id')
+        db = torndb.Connection(host='localhost', database='yhy', user='root', password='88888888')
+        software = db.execute("delete from MacSoftware where id = %s", id)
+        self.write({'code': 1})
+        result = {}
+        db.close()
+        result['code'] = '0'
+        result['body'] = {'software': id}
+        result['message'] = '成功'
+        self.write(json_encode(result))
