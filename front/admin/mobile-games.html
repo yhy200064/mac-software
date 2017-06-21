@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>游戏管理</title>
+    <title>手游管理</title>
     <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/css/admin.css">
 </head>
 <body>
 <ul class="nav nav-tabs" style="padding-left: 200px">
     <li role="presentation"><a href="/admin">发布中心</a></li>
-    <li role="presentation" class="active"><a href="/admin/newest">游戏</a></li>
+    <li role="presentation"><a href="/admin/newest">游戏</a></li>
     <li role="presentation"><a href="/admin/collection">合集</a></li>
-    <li role="presentation"><a href="/admin/mobilegames">手游</a></li>
+    <li role="presentation" class="active"><a href="/admin/mobilegames">手游</a></li>
     <li role="presentation"><a href="#">应用</a></li>
 </ul>
+
 <div class="game-manager">
-     <p style="font-size: 25px;color:#f60; position: relative; top:20px; margin-top: 16px;">安卓游戏</p>
-    <div id="newest-game">
-        <script type="text/html" id="new-game">
+    <p style="font-size: 25px;color:#f60; position: relative; top:20px; margin-top: 16px;">安卓手游</p>
+    <div id="all-mobile-new-games">
+        <script type="text/html" id="all-mobile-games">
             <% for (var i = 0; i < software.length; i++){ %>
             <div class="anzuo all-software">
                 <p><img src="<%= software[i].img %>"></p>
-                <p><%= software[i].title %></p>
+                <p><%= software[i].name %></p>
                 <div class="game-hover">
                     <p><span>类型：<%= software[i].type %></span></p>
                     <p><span>大小：<%= software[i].size %></span></p>
@@ -35,13 +36,12 @@
     </div>
 </div>
 
-
 <div class="game-manager">
-    <p style="font-size: 25px; color:#f60; position: relative; top:20px; margin-top: 16px;">苹果游戏</p>
-    <div id="all-mac-new-game">
-        <script type="text/html" id="all-mac-game">
+    <p style="font-size: 25px;color:#f60; position: relative; top:20px; margin-top: 16px;">苹果手游</p>
+    <div id="all-mac-mobile-new-games">
+        <script type="text/html" id="all-mac-mobile-games">
             <% for (var i = 0; i < software.length; i++){ %>
-            <div class="pengguo all-software">
+            <div class="pinguo all-software">
                 <p><img src="<%= software[i].img %>"></p>
                 <p><%= software[i].name %></p>
                 <div class="game-hover">
@@ -58,9 +58,7 @@
 </div>
 <script src="../../static/js/template-web.js"></script>
 <script src="../../static/js/jquery.js"></script>
-<script src="../../static/js/admin/newest.js"></script>
-<script src="../../static/js/admin/delsoftware.js"></script>
-<script src="../../static/js/admin/del-MacSoftware.js"></script>
-<script src="../../static/js/admin/mac-game.js"></script>
+<script src="../../static/js/admin/get-mobile-games.js"></script>
+<script src="../../static/js/admin/mac-mobile-games.js"></script>
 </body>
 </html>

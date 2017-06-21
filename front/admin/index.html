@@ -12,7 +12,7 @@
     <li role="presentation" class="active"><a href="/admin">发布中心</a></li>
     <li role="presentation"><a href="/admin/newest">游戏</a></li>
     <li role="presentation"><a href="/admin/collection">合集</a></li>
-    <li role="presentation"><a href="#">手游</a></li>
+    <li role="presentation"><a href="/admin/mobilegames">手游</a></li>
     <li role="presentation"><a href="#">应用</a></li>
 </ul>
 <div style="width: 880px; margin: auto;">
@@ -74,7 +74,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="input-group">
-                    <input style="width:300px" class="form-control" id="mac-name" name="title" placeholder="游戏标题">
+                    <input style="width:300px" class="form-control" id="mac-name" name="name" placeholder="游戏标题">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -109,10 +109,94 @@
             </div>
         </div>
     </div>
+
+    <div style="margin-bottom: 100px;">
+        <p style="margin-top: 40px; font-size: 16px;">手游发布</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width:300px" class="form-control" id="phone-name" name="name" placeholder="游戏标题">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="phone-type" name="type" placeholder="游戏类型">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="phone-size" name="size" placeholder="游戏大小">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="phone-edition" name="edition" placeholder="游戏版本">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 400px" class="form-control" id="phone-assess" name="assess" placeholder="游戏评星">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width:400px" id="phone-img" name="img" class="form-control" placeholder="游戏图片">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <button id="phone-button" class="btn-button">发布</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 100px;">
+        <p style="margin-top: 40px; font-size: 16px;">苹果手游发布</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width:300px" class="form-control" id="Mac-phone-name" name="name" placeholder="游戏标题">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="Mac-phone-type" name="type" placeholder="游戏类型">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="Mac-phone-size" name="size" placeholder="游戏大小">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 300px" class="form-control" id="Mac-phone-edition" name="edition" placeholder="游戏版本">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width: 400px" class="form-control" id="Mac-phone-assess" name="assess" placeholder="游戏评星">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input style="width:400px" id="Mac-phone-img" name="img" class="form-control" placeholder="游戏图片">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <button id="MacPhone-button" class="btn-button">发布</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="../../static/js/jquery.js"></script>
 <script src="../../static/js/admin/admin.js"></script>
 <script src="../../static/js/admin/collection.js"></script>
 <script src="../../static/js/admin/admin-Mac.js"></script>
+<script src="../../static/js/admin/mobile-games.js"></script>
+<script src="../../static/js/admin/mac-mobile-games.js"></script>
 </body>
 </html>
