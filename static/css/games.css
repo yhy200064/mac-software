@@ -1,3 +1,8 @@
+
+body {
+    background: #f8f8f8;
+}
+
 .gameAd-center {
     height: auto;
     width: 1200px;
@@ -16,7 +21,6 @@
     position: relative;
 }
 
-
 .tupian-switch {
     position: absolute;
     width: 884px;
@@ -33,7 +37,7 @@
     overflow: hidden;
 }
 
-.tupian-sign .hover strong{
+.tupian-sign .hover strong {
     bottom: 73px;
 }
 
@@ -88,6 +92,7 @@ strong {
     background-color: #fff;
     margin: 15px 6px;
     cursor: pointer;
+    transition: width 0.5s;
 }
 
 .toubu-bar-right {
@@ -123,4 +128,764 @@ strong {
 
 a:hover {
     text-decoration: none;
+}
+
+.rongqi-center {
+    height: auto;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/*安卓游戏推荐*/
+
+.anzuo-game-tuijian {
+    float: left;
+    height: 480px;
+    width: 854px;
+    display: block;
+    background: #fff;
+    padding: 15px 15px 0;
+}
+
+.anzuo-game-tuijian .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.anzuo-game-tuijian .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.anzuo-game-tuijian .title ul {
+    height: 100%;
+    width: auto;
+    float: right;
+    display: block;
+    overflow: hidden;
+}
+
+.anzuo-game-tuijian .title ul li {
+    height: 100%;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+.anzuo-game-tuijian .title ul li i {
+    height: 6px;
+    width: 6px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin: 10px 8px 10px 0;
+    background-color: #f60;
+}
+
+.anzuo-game-tuijian .title ul li a {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+}
+
+.anzuo-game-tuijian .part-game {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.anzuo-game-tuijian .part-game .game-list {
+    height: auto;
+    width: 870px;
+    display: block;
+}
+
+.anzuo-game-tuijian .game-img {
+    height: 276px;
+    width: 420px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin-right: 13px;
+}
+
+.anzuo-game-tuijian .part-game .big-img {
+    height: 276px;
+    width: 420px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.anzuo-game-tuijian .game-img .rj-info {
+    height: 120px;
+    width: 420px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    bottom: 120px;
+    background-color: #333;
+}
+
+.anzuo-game-tuijian .game-img .rj-info .small-img {
+    height: 80px;
+    width: 80px;
+    display: block;
+    float: left;
+    margin: 20px;
+}
+
+.anzuo-game-tuijian .game-img .info-name {
+    height: 80px;
+    width: 170px;
+    display: block;
+    float: left;
+    margin: 20px 0;
+}
+
+.anzuo-game-tuijian .game-img .info-name .name {
+    height: 20px;
+    width: 100%;
+    display: block;
+    line-height: 20px;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.anzuo-game-tuijian .game-img .info-name p {
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 4px 0;
+    line-height: 20px;
+}
+
+.anzuo-game-tuijian .game-img .info-name p span {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.anzuo-game-tuijian .game-img .info-name img {
+    height: 12px;
+    width: 68px;
+}
+
+.game-list .game-img .button {
+    height: 38px;
+    width: 100px;
+    display: block;
+    float: right;
+    background-color: #f60;
+    margin-top: 56px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.anzuo-game-tuijian .game-list li {
+    height: 108px;
+    width: 180px;
+    padding: 10px;
+    display: block;
+    float: left;
+    border: 1px solid #eee;
+    margin: 0 15px 16px 0;
+}
+
+.anzuo-game-tuijian .game-list li a strong {
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    font-weight: 400;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    margin: 4px 0 12px;
+}
+
+.anzuo-game-tuijian .game-list li a img {
+    height: 70px;
+    width: 70px;
+    display: block;
+    float: left;
+}
+
+.anzuo-game-tuijian .game-list .rj-xingxi {
+    width: 100px;
+    height: 80px;
+    display: block;
+    overflow: hidden;
+    float: right;
+}
+
+.rj-xingxi .title {
+    height: 14px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    line-height: 14px;
+    color: #999;
+    font-size: 12px;
+    text-align: left;
+}
+
+.rj-xingxi img {
+    height: 12px;
+    width: 68px;
+    margin-top: -10px;
+}
+
+.rj-xingxi .num {
+    height: 20px;
+    width: 40px;
+    display: block;
+    font-size: 22px;
+    color: #f60;
+    line-height: 20px;
+}
+
+.rj-xingxi .num span {
+    font-size: 16px;
+}
+
+.down-shoucang {
+    float: right;
+    height: 22px;
+    width: 50px;
+    display: block;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+.down-shoucang .down {
+    height: 22px;
+    width: 22px;
+    display: block;
+    float: left;
+    background: url(http://www.5577.com/skin/library/images/zone_m_down.png) no-repeat;
+}
+
+.down-shoucang .shoucang {
+    height: 22px;
+    width: 22px;
+    display: block;
+    background: url(http://www.5577.com/skin/library/images/zone_m_down_a.png) no-repeat;
+    float: right;
+}
+
+.week-new-game {
+    width: 270px;
+    height: 465px;
+    background-color: #fff;
+    padding: 15px;
+    float: right;
+    display: inline;
+}
+
+.week-new-game .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.week-new-game .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.week-new-game .title a {
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.week-new-game .img {
+    height: 140px;
+    width: 270px;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.week-new-game .img a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.week-new-game .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.week-new-game .img p {
+    height: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+}
+
+.week-new-game .neirong {
+    height: auto;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.week-new-game .neirong ul {
+    height: 259px;
+    width: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.week-new-game .neirong ul li {
+    float: left;
+    height: auto;
+    width: 75px;
+    display: block;
+    margin: 0 22px 20px 0;
+}
+
+.week-new-game .neirong ul li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.week-new-game .neirong ul li a img {
+    height: 75px;
+    width: 75px;
+}
+
+.week-new-game .neirong ul li a p {
+    height: 20px;
+    width: 100%;
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+/*热门单机*/
+
+.hot-danji {
+    background-color: #fff;
+    width: 1170px;
+    padding: 15px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.hot-danji .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.hot-danji .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.hot-danji .title .game-type {
+    height: 24px;
+    line-height: 24px;
+    float: right;
+    display: block;
+    width: auto;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.hot-danji .title .game-type strong {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.hot-danji .title .game-type a {
+    color: #333;
+    margin-left: 10px;
+}
+
+/*破解游戏首发*/
+.crack-starter {
+    background-color: #fff;
+    width: 1170px;
+    padding: 15px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.crack-starter .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.crack-starter .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.crack-starter .title a {
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+.crack-starter .qiehuan {
+    height: 120px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.crack-starter .qiehuan .button {
+    display: block;
+    height: 45px;
+    width: 45px;
+    float: left;
+    background: url(http://www.5577.com/skin/library/images/zone_hot_game_left.png) no-repeat;
+    margin: 37px 10px;
+}
+
+.crack-starter .qiehuan .list-img {
+    height: 100%;
+    width: 1024px;
+    display: block;
+    float: left;
+    margin-left: 8px;
+}
+
+.crack-starter .list-img .img-qiehuan {
+    overflow: hidden;
+    position: relative;
+    width: 1024px;
+}
+
+.crack-starter .list-img .img-qiehuan ul {
+    display: block;
+    height: 100%;
+    width: 3072px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: -1024px;
+}
+
+.crack-starter .list-img .img-qiehuan ul li {
+    height: 120px;
+    width: 224px;
+    display: block;
+    float: left;
+    margin: 0 16px;
+}
+
+.crack-starter .list-img .img-qiehuan ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.crack-starter .list-img .img-qiehuan ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.crack-starter .list-img .img-qiehuan ul li p {
+    height: 30px;
+    width: 100%;
+    display: block;
+    position: relative;
+    bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+}
+
+.crack-starter .qiehuan .button-after {
+    display: block;
+    height: 45px;
+    width: 45px;
+    float: right;
+    background: url(http://www.5577.com/skin/library/images/zone_hot_game_right.png) no-repeat;
+    margin: 37px 10px;
+}
+
+/*苹果游戏*/
+
+.rq-center {
+    height: auto;
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.apple-games {
+    width: 854px;
+    height: 410px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.f-fl {
+    float: left;
+    display: inline;
+}
+
+.apple-games .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.apple-games .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.apple-games .title .game-type {
+    height: 24px;
+    line-height: 24px;
+    float: right;
+    display: block;
+    width: auto;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.apple-games .title .game-type strong {
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.apple-games .title .game-type a {
+    color: #333;
+    margin-left: 10px;
+}
+
+.xiaobantuijian {
+    width: 270px;
+    height: 410px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.xiaobantuijian .title {
+    height: 26px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.xiaobantuijian .title span {
+    border-left: 6px solid #f60;
+    display: block;
+    height: 100%;
+    width: auto;
+    float: left;
+    text-indent: 10px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.xiaobantuijian .f-content {
+    height: auto;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.xiaobantuijian .f-content ul {
+    height: auto;
+    width: 300px;
+    display: block;
+    overflow: hidden;
+}
+
+.xiaobantuijian .f-content ul li {
+    float: left;
+    height: auto;
+    width: 75px;
+    display: block;
+    margin: 0 22px 12px 0;
+}
+
+.xiaobantuijian .f-content ul li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.xiaobantuijian .f-content ul li img {
+    height: 75px;
+    width: 75px;
+}
+
+.xiaobantuijian .f-content ul li .name {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+}
+
+.xiaobantuijian .f-content ul li p {
+    height: 20px;
+    width: 100%;
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.f-fr {
+    float: right;
+    display: inline;
+}
+
+/*热门专区*/
+
+.hot-quyu {
+    background-color: #fff;
+    width: 1170px;
+    padding: 15px;
+}
+
+.f-center {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.hot-quyu .type-title {
+    height: 40px;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #eee;
+}
+
+.hot-quyu .type-title ul {
+    height: auto;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    bottom: -2px;
+}
+
+.hot-quyu .type-title ul .on {
+    border-bottom: 2px solid #f60;
+}
+
+.hot-quyu .type-title ul li {
+    height: 38px;
+    width: auto;
+    display: block;
+    float: left;
+    padding: 0 4px;
+    margin: 0 16px;
+    cursor: pointer;
+}
+
+.hot-quyu .type-title ul .on span {
+    color: #f60;
+}
+
+.hot-quyu .type-title ul li span {
+    font-size: 20px;
+    color: #333;
+    height: 40px;
+    width: 100%;
+    display: block;
+}
+
+/*伪类*/
+
+.anzuo-game-tuijian .title ul li a:hover, .anzuo-game-tuijian .game-list li a strong:hover {
+    color: #f60;
+}
+
+.anzuo-game-tuijian .game-list .frame {
+    border: 1px solid #f60;
 }
