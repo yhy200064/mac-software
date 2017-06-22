@@ -21,3 +21,28 @@
         });
     }
 })(jQuery);
+
+
+(function ($) {
+    newMacMobileGames();
+
+    function newMacMobileGames() {
+        $.ajax({
+            url: '/new/mac/mobile/games',
+            type: 'GET',
+            data: {},
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                var html = template('new-MacMobileGames', data.body);
+                $('#newest-MacMobileGames').html(html);
+            },
+            error: function (data) {
+                console.log('错误:', data);
+            }
+        });
+    }
+})(jQuery);
+
+
+

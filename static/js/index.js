@@ -99,12 +99,21 @@ function newhandtravelBindEvents() {
         $('.xing-MobileGames').not(this).find('.txtbox').css('display', 'block')
     });
 
+     $('#newest-MacMobileGames').on('mouseenter', '.xing-MacMobileGames', function () {
+        $(this).children('.imgbox').css('display', 'block');
+        $('.xing-MacMobileGames').not(this).children('.imgbox').css('display', 'none');
+        $(this).children('.txtbox').css('display', 'none');
+        $('.xing-MacMobileGames').not(this).find('.txtbox').css('display', 'block')
+    });
+
+
     $('.zxsy-sort .title .yx-xt .az-hover').mouseenter(function () {
         $(this).css('background', '#f60');
         $(this).css('color', '#fff');
         $('.zxsy-sort .title .yx-xt .pinguo').css('background', '#f5f5f5');
         $('.zxsy-sort .title .yx-xt .pinguo').css('color', '#333');
         $('#newest-MobileGames').css('display', 'block');
+        $('#newest-MacMobileGames').css('display', 'none');
     });
 
     $('.zxsy-sort .title .yx-xt .pinguo').mouseenter(function () {
@@ -113,6 +122,7 @@ function newhandtravelBindEvents() {
         $('.zxsy-sort .title .yx-xt .az-hover').css('background', '#f5f5f5');
         $('.zxsy-sort .title .yx-xt .az-hover').css('color', '#333');
         $('#newest-MobileGames').css('display', 'none');
+        $('#newest-MacMobileGames').css('display', 'block');
     })
 }
 

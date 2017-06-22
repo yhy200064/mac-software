@@ -70,14 +70,14 @@ function toptupianleft() {
         imageId = setInterval(function () {
             showImage(index++);
             showSpots(current++);
-            if (current == 3) current = 0;
-            if (index == 3) index = 0
+            if (current == 3){current = 0}
+            if (index == 3){index = 0}
         }, 4000);
     }
 
     function showImage(index) {
         $('.tupian-sign > li').css('display', 'none');
-        $('.tupian-sign > li').stop().animate({opacity: '0'});
+        $('.tupian-sign > li').stop().animate({opacity: '0'}, 500);
         $('.tupian-sign > li').eq(index).css('display', 'block');
         $('.tupian-sign > li').eq(index).stop().animate({opacity: '1'}, 500);
 
