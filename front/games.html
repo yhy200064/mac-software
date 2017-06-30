@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../static/css/games.css">
     <script src="../static/js/jquery.js"></script>
     <script src="../static/js/index.js"></script>
-    <script src="../static/js/games.js"></script>
 </head>
 <body>
 <div class="navTop">
@@ -64,7 +63,7 @@
             <a href="/collection">合集</a>
             <ul class="drop-down">
                 <li>
-                    <a href="">主题标签</a>
+                    <a href="/zhuti">主题标签</a>
                 </li>
                 <li>
                     <a href="">游戏专区</a>
@@ -344,7 +343,7 @@
     <div class="title">
         <span>热门单机</span>
         <div class="game-type">
-            <strong>益智</strong>
+            <strong class="on">益智</strong>
             |
             <strong>角色扮演</strong>
             |
@@ -367,7 +366,21 @@
             <a href="">更多</a>
         </div>
     </div>
-    <div></div>
+    <div class="m-content">
+        <ul class="hover" id="all-puzzle">
+            <script type="text/html" id="puzzle">
+                <% for (var i = 0; i < software.length; i++){ %>
+                <li>
+                    <a href="">
+                        <img src="<%= software[i].img %>">
+                        <p class="title"><%= software[i].title %></p>
+                        <p><%= software[i].type %></p>
+                    </a>
+                </li>
+                <% } %>
+            </script>
+        </ul>
+    </div>
 </div>
 <div class="crack-starter">
     <div class="title">
@@ -381,49 +394,49 @@
                 <ul class="zd-jiaohan">
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125917472272.jpg" alt="神庙逃亡23.8.1内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125945272937.jpg" alt="神庙逃亡23.8.1内购破解版">
                             <p>神庙逃亡23.8.1内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2016-11/20161121417402248.jpg" alt="密室逃脱13秘密任务无限提示内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125917472272.jpg" alt="密室逃脱13秘密任务无限提示内购破解版">
                             <p>密室逃脱13秘密任务无限提示内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125945272937.jpg" alt="火柴人联盟1.11.2内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125942187514.jpg" alt="火柴人联盟1.11.2内购破解版">
                             <p>火柴人联盟1.11.2内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125942187514.jpg" alt="疯狂动物园2017无限金币版">
+                            <img src="http://pic.5577.com/up/2016-11/20161121417402248.jpg" alt="疯狂动物园2017无限金币版">
                             <p>疯狂动物园2017无限金币版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125917472272.jpg" alt="神庙逃亡23.8.1内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125945272937.jpg" alt="神庙逃亡23.8.1内购破解版">
                             <p>神庙逃亡23.8.1内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2016-11/20161121417402248.jpg" alt="密室逃脱13秘密任务无限提示内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125917472272.jpg" alt="密室逃脱13秘密任务无限提示内购破解版">
                             <p>密室逃脱13秘密任务无限提示内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125945272937.jpg" alt="火柴人联盟1.11.2内购破解版">
+                            <img src="http://pic.5577.com/up/2017-1/2017125942187514.jpg" alt="火柴人联盟1.11.2内购破解版">
                             <p>火柴人联盟1.11.2内购破解版</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <img src="http://pic.5577.com/up/2017-1/2017125942187514.jpg" alt="疯狂动物园2017无限金币版">
+                            <img src="http://pic.5577.com/up/2016-11/20161121417402248.jpg" alt="疯狂动物园2017无限金币版">
                             <p>疯狂动物园2017无限金币版</p>
                         </a>
                     </li>
@@ -440,10 +453,29 @@
             <div class="game-type">
                 <strong class="hover">IOS单机</strong>
                 |
-                <strong class="hover">越狱游戏</strong>
+                <strong class="">越狱游戏</strong>
                 |
                 <a href="">更多</a>
             </div>
+        </div>
+        <div class="m-content">
+            <ul class="hover" id="all-ios">
+                <script type="text/html" id="ios">
+                    <% for (var i = 0; i < software.length; i++){ %>
+                    <li>
+                        <a href="">
+                            <img class="m-img" src="<%= software[i].img %>">
+                            <div class="m-detail">
+                                <p class="title"><%= software[i].name %></p>
+                                <img src="<%= software[i].assess %>">
+                                <p><%= software[i].type %></p>
+                                <span class="button">立即下载</span>
+                            </div>
+                        </a>
+                    </li>
+                    <% } %>
+                </script>
+            </ul>
         </div>
     </div>
     <div class="xiaobantuijian f-fr">
@@ -539,7 +571,70 @@
             </li>
         </ul>
     </div>
-    <div></div>
+    <div class="m-content">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2017-1/20171211228455467.jpg">
+                    <p>支付宝福卡专区</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2016-2/111.jpg">
+                    <p>2016央视春晚直播</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up//2016-3/sjzzhd.jpg">
+                    <p>谷歌围棋大战直播</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2015-12/14489565475527158.jpg">
+                    <p>2016抢票软件哪个好</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2016-2/13333.jpg">
+                    <p>手游SF</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2015-9/kaixueji.jpg">
+                    <p>开学必备app下载</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2015-5/huaaozhuanti.jpg">
+                    <p>花棉袄p图软件下载</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2016-8/2016841518156889.png">
+                    <p>2016奥运会直播</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://pic.5577.com/up/2015-5/201557162019.jpg">
+                    <p>我看起来几岁【How Old Do I Look】电脑版</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://www.5577.com/skin/xsh/general/images/banner.jpg">
+                    <p>植物大战僵尸2</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="bottom">
     <p>
@@ -572,6 +667,8 @@
 <aside id="side" class="side-wrap"></aside>
 <script src="../static/js/template-web.js"></script>
 <script src="../static/js/jquery.js"></script>
+<script src="../static/js/games.js"></script>
+<script src="../static/js/ios.js"></script>
 <script src="../static/js/weeks-games.js"></script>
 </body>
 </html>
