@@ -15,7 +15,7 @@ class AdminMobilegamesHandler(tornado.web.RequestHandler):
 
 class ApiGamesHandler(tornado.web.RequestHandler):
     def get(self):
-        db = torndb.Connection(host='localhost', database='yhy', user='root', password='88888888')
+        db = torndb.Connection(host = 'localhost', database = 'yhy', user = 'root', password = '88888888')
         softwares = db.query('select * from software where week(created_at) limit 6;')
         result = {}
         for software in softwares:
